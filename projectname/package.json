@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "homepage": "https://bright8k.github.io/TODOapp/projectname",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "web-build": "expo export",
+    "deploy": "npm run web-build && gh-pages -d dist",
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
